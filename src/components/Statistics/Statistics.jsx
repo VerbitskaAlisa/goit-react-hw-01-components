@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { StatisticsCard, Title, StatList, StatItem, StatsDescription } from './Statistics.styled';
 
-export const Statistics = ({data: data}) => {
+export const Statistics = ({stats: data}) => {
     return ( <StatisticsCard>
     <Title>Upload stats</Title>
   
@@ -17,7 +17,7 @@ export const Statistics = ({data: data}) => {
 };
 
 Statistics.propTypes = {
-  data: PropTypes.arrayOf(
+  stats: PropTypes.arrayOf(
     PropTypes.exact({
       id: PropTypes.string.isRequired,
       label: PropTypes.string.isRequired,

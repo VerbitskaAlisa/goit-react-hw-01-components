@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { Table, Heading, String, TabelData} from './Transactions.styled';
 
 
-export const TransactionHistory = ({items: items}) => {
+export const TransactionHistory = ({data: items}) => {
    return (
     <Table>
   <thead>
@@ -14,7 +14,7 @@ export const TransactionHistory = ({items: items}) => {
   </thead>
 
   <tbody>
-    {items.map(({id, type, amount, currency}) => {
+    {data.map(({id, type, amount, currency}) => {
        return (
         <String key={id}>
       <TabelData>{type}</TabelData>
