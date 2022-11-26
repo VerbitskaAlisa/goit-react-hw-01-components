@@ -18,6 +18,7 @@ export const Statistics = ({title, stats: data}) => {
 };
 
 Statistics.propTypes = {
+  title: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.exact({
       id: PropTypes.string,
