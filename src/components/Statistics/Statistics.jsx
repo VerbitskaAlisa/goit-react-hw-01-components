@@ -4,7 +4,7 @@ import { StatisticsCard, Title, StatList, StatItem, StatsDescription } from './S
 export const Statistics = ({title, stats: data}) => {
     return ( 
     <StatisticsCard>
-    <Title>{title}</Title>
+    {title !== undefined && <Title>{title}</Title>}  
   
     <StatList>
         {data.map(({id, label, percentage}) => {
